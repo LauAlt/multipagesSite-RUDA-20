@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap,Bungee&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+$ruda-primary: #000;
+$ruda-secondary: #fff;
+$ruda-font-primary: 'Bungee Shade';
+$ruda-font-secondary:'Bungee';
+$ruda-font-text: 'Montserrat';
+
+a {
+    text-decoration: none;
+    color: $ruda-primary;
+}
+
+a:hover {
+    color: $ruda-primary;
+}
+
+h1 {
+    font-family: $ruda-font-secondary;
+}
+
+h2, h3 {
+    font-family: $ruda-font-secondary;
+}
+
+p {
+    font-family: $ruda-font-text;
+    text-align: justify ;
+}
+
+// HEADER
+.parallax {
+    background: fixed no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#header {
+    background-image: url(/img/header-parralax.png);
+}
+
+#header-talles {
+    background-image: url(/img/header-parallax-talles.png);
+}
+
+#header-tienda {
+    background-image: url(/img/header-parallax-tienda.png);
+}
+
+#header-galeria {
+    background-image: url(/img/header-parallax-galeria.png) ;
+}
+
+#header-faq {
+    background-image: url(/img/header-parallax-faq.png);
+}
+
+#header-contacto {
+    background-image: url(/img/header-parallax-contacto.png);
+}
+
+/* FOOTER */
+#footer {
+    background-image: url(/img/footer-parallax-talles.png);
+}
+
+#footer-galeria {
+    background-image: url(/img/footer-parallax-talles.png);
+}
+
+#footer-faq {
+    background-image: url(/img/footer-parallax-talles.png);
+}
+
+#footer-talles {
+    background-image: url(/img/footer-parallax-talles.png);
+}
+
+#footer-tienda {
+    background-image: url(/img/footer-parallax-talles.png);
+}
+
+#footer-contacto {
+    background-image: url(/img/footer-parallax-talles.png);
+    
+}
+
+
+//  NAV FOOTER
+footer nav ul li a {
+    margin-top: 3rem;
+    font-family: $ruda-font-secondary;
+    color: $ruda-primary;
+}
+
+footer nav ul li a:hover {
+    color: #FFDF27;
+    font-size: 25px;
+}
+
+
+
+// ANIMACIONES
+.shake-slow {
+    display: inherit;
+    transform-origin: center center;
+}
+.shake-freeze:hover,
+.shake-trigger:hover .shake-freeze, .shake-slow:hover,
+.shake-trigger:hover .shake-slow {
+    animation-play-state: running;
+}
+
+@keyframes shake-slow {
+    2% {
+    transform: translate(2px, 1px) rotate(-0.5deg); }
+    4% {
+    transform: translate(-5px, -9px) rotate(-2.5deg); }
+    6% {
+    transform: translate(5px, 3px) rotate(2.5deg); }
+    8% {
+    transform: translate(5px, 4px) rotate(1.5deg); }
+    10% {
+    transform: translate(-4px, -8px) rotate(-0.5deg); }
+    12% {
+    transform: translate(-2px, -9px) rotate(1.5deg); }
+    14% {
+    transform: translate(0px, 6px) rotate(3.5deg); }
+    16% {
+    transform: translate(8px, 2px) rotate(2.5deg); }
+    18% {
+    transform: translate(-4px, -1px) rotate(1.5deg); }
+    20% {
+    transform: translate(10px, 2px) rotate(-2.5deg); }
+    22% {
+    transform: translate(-2px, -4px) rotate(1.5deg); }
+    24% {
+    transform: translate(-8px, 5px) rotate(-0.5deg); }
+    26% {
+    transform: translate(-3px, -5px) rotate(3.5deg); }
+    28% {
+    transform: translate(6px, 2px) rotate(2.5deg); }
+    30% {
+    transform: translate(-5px, -2px) rotate(2.5deg); }
+    32% {
+    transform: translate(5px, -6px) rotate(-2.5deg); }
+    34% {
+    transform: translate(5px, -7px) rotate(-1.5deg); }
+    36% {
+    transform: translate(3px, -9px) rotate(0.5deg); }
+    38% {
+    transform: translate(6px, -2px) rotate(-0.5deg); }
+    40% {
+    transform: translate(-4px, -2px) rotate(0.5deg); }
+    42% {
+    transform: translate(7px, -8px) rotate(1.5deg); }
+    44% {
+    transform: translate(-4px, 10px) rotate(-1.5deg); }
+    46% {
+    transform: translate(-3px, 8px) rotate(-1.5deg); }
+    48% {
+    transform: translate(3px, 6px) rotate(-0.5deg); }
+    50% {
+    transform: translate(4px, -1px) rotate(-2.5deg); }
+    52% {
+    transform: translate(1px, 5px) rotate(-0.5deg); }
+    54% {
+    transform: translate(-3px, 7px) rotate(-2.5deg); }
+    56% {
+    transform: translate(3px, 3px) rotate(-2.5deg); }
+    58% {
+    transform: translate(-8px, -5px) rotate(-1.5deg); }
+    60% {
+    transform: translate(1px, -9px) rotate(3.5deg); }
+    62% {
+    transform: translate(0px, -3px) rotate(-0.5deg); }
+    64% {
+    transform: translate(4px, 2px) rotate(2.5deg); }
+    66% {
+    transform: translate(4px, 10px) rotate(1.5deg); }
+    68% {
+    transform: translate(1px, 2px) rotate(-2.5deg); }
+    70% {
+    transform: translate(-9px, 10px) rotate(0.5deg); }
+    72% {
+    transform: translate(-5px, -8px) rotate(0.5deg); }
+    74% {
+    transform: translate(-3px, -8px) rotate(3.5deg); }
+    76% {
+    transform: translate(-1px, 8px) rotate(3.5deg); }
+    78% {
+    transform: translate(-5px, -4px) rotate(0.5deg); }
+    80% {
+    transform: translate(-6px, 1px) rotate(1.5deg); }
+    82% {
+    transform: translate(-5px, -7px) rotate(1.5deg); }
+    84% {
+    transform: translate(1px, -6px) rotate(-0.5deg); }
+    86% {
+    transform: translate(-8px, -4px) rotate(3.5deg); }
+    88% {
+    transform: translate(-6px, 7px) rotate(-1.5deg); }
+    90% {
+    transform: translate(9px, 6px) rotate(-2.5deg); }
+    92% {
+    transform: translate(9px, -8px) rotate(3.5deg); }
+    94% {
+    transform: translate(3px, 3px) rotate(2.5deg); }
+    96% {
+    transform: translate(-6px, -7px) rotate(2.5deg); }
+    98% {
+    transform: translate(5px, -2px) rotate(-0.5deg); }
+    0%, 100% {
+    transform: translate(0, 0) rotate(0); }
+}
+
+.shake-slow:hover,
+.shake-trigger:hover .shake-slow, .shake-slow.shake-freeze, .shake-slow.shake-constant {
+    animation-name: shake-slow;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.go-to-top-btn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: $ruda-primary;
+    bottom: 50px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: $ruda-secondary;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.nav-color {
+    background: $ruda-primary;
+}
+
+.rrss {
+    text-align: center;
+}
+
+.firma-copy {
+    text-align: center;
+    color: $ruda-primary;
+    font-family: $ruda-font-text;
+}
+
+a {
+    font-family: $ruda-font-secondary;
+}
+
+@media only screen and (max-width: 768px) {
+    #header-contacto {
+        background: $ruda-secondary;
+}
+    #header-faq {
+        background: $ruda-secondary;
+    }
+    #header-talles {
+    background: $ruda-secondary;
+    }
+    #header-tienda {
+        background: $ruda-secondary;
+    }
+    #header-galeria {
+        background: $ruda-secondary;
+    }
+
+    #footer-galeria {
+        background: $ruda-secondary;
+    }
+    #footer-faq {
+        background: $ruda-secondary;
+    }
+    #footer-talles {
+        background: $ruda-secondary;     
+    }     
+    #footer-contacto {
+        display: none;
+    }
+    #footer {
+        background: $ruda-secondary ;
+    }
+    .no-aparece {
+        display: none;
+    }
+
+    .centrar {
+    text-align: center;
+    }
+
+    .go-to-top-btn {
+    bottom: 40px;
+    right: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1200px) {
+    #header-talles {
+        background-image: url(/img/footer-parallax-talles.png);
+    }
+    #header-galeria {
+        background-image: url(/img/footer-parallax-talles.png);
+    }
+    #header-faq {
+        background-image: url(/img/footer-parallax-talles.png);
+    }
+    #header-contacto {
+        background-image: url(/img/footer-parallax-talles.png);
+    }
+    .galeria {
+        margin-right: 60px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .nav-footer{
+        margin-left: 40vh;
+        height: 20vh;
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@font-face {
+    font-display: swap
+}
